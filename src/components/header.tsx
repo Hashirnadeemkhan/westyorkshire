@@ -34,7 +34,7 @@ export function Header() {
       <div className="container-pad flex items-center justify-between">
         <a href="#home" className="flex items-center">
           <Image
-            src="/logo.jpeg"
+            src="/brand-logo.png"
             alt={site.name}
             width={260}
             height={173}

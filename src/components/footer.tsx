@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Image
-              src="/logo.jpeg"
+              src="/brand-logo.png"
               alt={site.name}
               width={300}
               height={200}

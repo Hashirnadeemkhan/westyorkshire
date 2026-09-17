@@ -36,7 +36,7 @@ export function HeroSection() {
         Est · Huddersfield · HD4 5LJ
       </span>
 
-      <div className="container-pad relative grid grid-cols-1 items-center gap-12 pb-16 pt-32 sm:pt-36 lg:grid-cols-[1.08fr_0.92fr] lg:pb-20 lg:pt-40">
+      <div className="container-pad relative grid grid-cols-1 items-center gap-12 pb-16 pt-32 sm:pt-36 lg:grid-cols-[0.98fr_1.02fr] lg:gap-10 lg:pb-20 lg:pt-40">
         {/* Copy */}
         <div className="min-w-0">
           <motion.p
@@ -48,24 +48,23 @@ export function HeroSection() {
             <MapPin className="h-3.5 w-3.5" /> Huddersfield · West Yorkshire
           </motion.p>
 
-          <h1 className="mt-6">
-            {["We Fix Cars", "At Your Door"].map((line, i) => (
-              <motion.span
-                key={line}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.08 + i * 0.09, ease }}
-                className="display block text-[11.5vw] sm:text-7xl lg:text-8xl"
-              >
-                {i === 1 ? (
-                  <>
-                    At Your <span className="text-gold">Door</span>
-                  </>
-                ) : (
-                  line
-                )}
-              </motion.span>
-            ))}
+          <h1 className="mt-6 space-y-2 sm:space-y-3 lg:space-y-4">
+            <motion.span
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.08, ease }}
+              className="display block text-[11.5vw] leading-[0.95] sm:text-7xl lg:text-8xl"
+            >
+              We Fix Cars
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.17, ease }}
+              className="display block text-[11.5vw] leading-[0.95] sm:text-7xl lg:text-8xl"
+            >
+              At Your <span className="text-gold">Door</span>
+            </motion.span>
           </h1>
 
           <motion.p
@@ -126,14 +125,14 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease }}
-          className="relative mx-auto w-full min-w-0 max-w-[440px]"
+          className="relative mx-auto w-full min-w-0 max-w-[500px] lg:max-w-[600px]"
         >
           <Seal className="absolute -left-8 -top-10 z-20 w-28 sm:w-32" />
 
           <div className="relative border-2 border-brand-gold bg-brand-night p-2.5 shadow-hard-gold">
             <Image
-              src="/hero-mechanic.jpg"
-              alt="Mobile mechanic servicing a car at a customer's home in West Yorkshire"
+              src="/hero-van.jpg"
+              alt="West Yorkshire Mobile Mechanic van servicing a car at a customer's home"
               width={1376}
               height={768}
               priority
