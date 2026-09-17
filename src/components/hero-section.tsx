@@ -131,16 +131,16 @@ export function HeroSection() {
           <Seal className="absolute -left-8 -top-10 z-20 w-28 sm:w-32" />
 
           <div className="relative border-2 border-brand-gold bg-brand-night p-2.5 shadow-hard-gold">
-            <div className="animate-float">
-              <Image
-                src="/logo.jpeg"
-                alt={`${site.name} logo`}
-                width={720}
-                height={480}
-                priority
-                className="w-full"
-              />
-            </div>
+            <Image
+              src="/hero-mechanic.jpg"
+              alt="Mobile mechanic servicing a car at a customer's home in West Yorkshire"
+              width={1376}
+              height={768}
+              priority
+              className="aspect-[16/9] w-full object-cover"
+            />
+            {/* subtle gradient for text legibility over the photo */}
+            <div className="pointer-events-none absolute inset-2.5 bg-gradient-to-t from-brand-ink/50 via-transparent to-transparent" />
           </div>
 
           {/* number plate style callout */}

@@ -113,7 +113,17 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <p>Mobile car repairs across Huddersfield &amp; West Yorkshire.</p>
+          <p>
+            Designed by{" "}
+            <a
+              href="https://www.brightreachsolutions.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-brand-gold transition-colors hover:text-brand-gold-light"
+            >
+              BrightReach Solutions
+            </a>
+          </p>
         </div>
       </div>
     </footer>
